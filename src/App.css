@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200vh;
+  height: 300vh;
 }
 
 .App {
@@ -57,6 +57,18 @@
   padding: 20px;
   box-sizing: border-box; /* Optional: Background color */
   margin-top: 40px;
+}
+
+.item8 {
+  grid-column: 1 / -1; /* Span all columns */
+  grid-row: 5; /* Place it below item7 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Reduce padding for half height */
+  box-sizing: border-box;
+  margin-top: 20px; /* Reduce margin-top for spacing */
+  height: calc(50% - 10px); /* Half height compared to item7 */
 }
 
 ::-webkit-scrollbar {

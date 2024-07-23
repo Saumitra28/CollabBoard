@@ -6,6 +6,7 @@ import Weather from "./Components/Weather/Weather";
 import Greeting from "./Components/Greeting/Greeting";
 import Time from "./Components/Time/Time";
 import GoogleSlides from "./Components/GoogleSlides/GoogleSlides";
+import PomodoroTimer from "./Components/PomodoroTimer/PomodoroTimer";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
         </div>
         <div className="item7">
           <GoogleSlides />
+        </div>
+        <div className="item8">
+          <PomodoroTimer />
         </div>
       </div>
     </div>
