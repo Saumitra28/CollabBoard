@@ -1,0 +1,24 @@
+.google-slides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Optional: Background color */
+  }
+  
+  .google-slides iframe {
+    width: 100%;
+    max-width: 800px; /* Set a max-width for responsiveness */
+    height: 500px;
+    border: none;
+  }
+  
+  .google-slides h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
