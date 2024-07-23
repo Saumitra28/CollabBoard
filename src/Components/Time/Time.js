@@ -1,8 +1,9 @@
 import { useState } from "react";
-import './Time.css';
+import "./Time.css";
+import { motion } from "framer-motion";
 
 const Time = () => {
-  const [currentTime, setCurrentTime] = useState('');
+  const [currentTime, setCurrentTime] = useState("");
 
   let now = new Date();
   now = now.toDateString().slice(0, 11);
@@ -20,15 +21,20 @@ const Time = () => {
     setCurrentTime(date);
 
     console.log(date);
-  }
+  };
 
   setTimeout(updateTime, 1000);
   return (
-    <div className="time-card">
+    <motion.div
+      className="time-card"
+      whileInView={{ y: 0, opacity: 1 }}
+      initial={{ y: -100, opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <span className="time-span">{currentTime}</span>
       <span>{now}</span>
-    </div>
+    </motion.div>
   );
-}
+};
 
 export default Time;
