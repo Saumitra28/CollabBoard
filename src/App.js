@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useContext } from "react";
 import Bookmarks from "./Components/Bookmarks/Bookmarks";
 import Todo from "./Components/Todo/Todo";
 import Crypto from "./Components/Crypto/Crypto";
@@ -6,9 +7,12 @@ import Weather from "./Components/Weather/Weather";
 import Greeting from "./Components/Greeting/Greeting";
 import Time from "./Components/Time/Time";
 import GoogleSlides from "./Components/GoogleSlides/GoogleSlides";
-import PomodoroTimer from "./Components/PomodoroTimer/PomodoroTimer";
+
+import PomodoroTimer from './Components/Pomodoro/PomodoroTimer';
+
 
 function App() {
+  
   return (
     <div className="app-wrapper">
       <div className="fixed top-0 z-[-10] h-full w-full">
@@ -39,7 +43,7 @@ function App() {
           <GoogleSlides />
         </div>
         <div className="item8">
-          <PomodoroTimer />
+        <PomodoroTimer />
         </div>
       </div>
     </div>
