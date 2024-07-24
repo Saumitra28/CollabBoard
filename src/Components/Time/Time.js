@@ -31,8 +31,13 @@ const Time = () => {
       initial={{ y: -100, opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+     <div className="flex justify-around">
+      <div className="flex flex-col text-lg">
       <span className="time-span">{currentTime}</span>
       <span>{now}</span>
+      </div>
+     <span  className="flex flex-col text-3xl">Good Evening !</span>
+     </div>
     </motion.div>
   );
 };

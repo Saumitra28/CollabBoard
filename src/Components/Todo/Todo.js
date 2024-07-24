@@ -88,7 +88,7 @@ const Todo = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="todos-wrapper">
-        <h3 className="todo-heading">Todos</h3>
+        <h3 className="todo-heading">Opportunity Board</h3>
         <form className="todo-form" onSubmit={addTodo}>
           <input
             type="text"

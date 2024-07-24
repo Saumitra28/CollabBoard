@@ -1,6 +1,7 @@
 .bookmark-list {
+  margin-top: -8rem;
   position: relative;
-  height: 550px;
+  height: 300px;
   padding: 7px;
   background: #444;
   border: 1px solid #777;
