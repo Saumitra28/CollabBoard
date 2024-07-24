@@ -8,12 +8,10 @@ import Greeting from "./Components/Greeting/Greeting";
 import Time from "./Components/Time/Time";
 import GoogleSlides from "./Components/GoogleSlides/GoogleSlides";
 
-import PomodoroTimer from './Components/Pomodoro/PomodoroTimer';
+import PomodoroTimer from "./Components/Pomodoro/PomodoroTimer";
 import GoogleMeet from "./Components/GoogleMeet/GoogleMeet";
 
-
 function App() {
-  
   return (
     <div className="app-wrapper">
       <div className="fixed top-0 z-[-10] h-full w-full">
@@ -37,17 +35,17 @@ function App() {
         <div className="item5">
           <Todo />
         </div>
-        <div className="item6">
+        {/* <div className="item6">
           <Crypto />
-        </div>
+        </div> */}
         <div className="item7">
           <GoogleSlides />
         </div>
         <div className="item8">
-        <PomodoroTimer />
+          <PomodoroTimer />
         </div>
         <div className="item9">
-        <GoogleMeet />
+          <GoogleMeet />
         </div>
       </div>
     </div>
