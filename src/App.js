@@ -9,6 +9,7 @@ import Time from "./Components/Time/Time";
 import GoogleSlides from "./Components/GoogleSlides/GoogleSlides";
 
 import PomodoroTimer from './Components/Pomodoro/PomodoroTimer';
+import GoogleMeet from "./Components/GoogleMeet/GoogleMeet";
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
         </div>
         <div className="item8">
         <PomodoroTimer />
+        </div>
+        <div className="item9">
+        <GoogleMeet />
         </div>
       </div>
     </div>

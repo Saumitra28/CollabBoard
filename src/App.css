@@ -70,6 +70,17 @@
   margin-top: 20px; /* Reduce margin-top for spacing */
   height: calc(50% - 10px); /* Half height compared to item7 */
 }
+.item9 {
+  grid-column: 1 / -1; /* Span all columns */
+  grid-row: 6; /* Place it below item7 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Reduce padding for half height */
+  box-sizing: border-box;
+  margin-top: 20px; /* Reduce margin-top for spacing */
+  height: calc(50% - 10px); /* Half height compared to item7 */
+}
 
 ::-webkit-scrollbar {
   width: 7px;
