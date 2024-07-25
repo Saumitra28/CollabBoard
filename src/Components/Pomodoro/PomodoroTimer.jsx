@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import styles from './PomodoroTimer.module.css'; // Correct import for CSS module
+import styles from './PomodoroTimer.module.css';
 
 const PomodoroTimer = () => {
-  const [timerValue, setTimerValue] = useState(1500);
+  const [timerValue, setTimerValue] = useState(1500); // Default to 25 minutes
   const [pomodoroType, setPomodoroType] = useState('POMODORO');
   const [intervalId, setIntervalId] = useState(null);
 
   const TIMER_TYPE_POMODORO = 'POMODORO';
   const TIMER_TYPE_SHORT_BREAK = 'SHORTBREAK';
-  const shortBreakTimerInSeconds = 100;
+  const shortBreakTimerInSeconds = 300; // 5 minutes in seconds
 
   const audio = new Audio('alarm.mp3');
   const totalTime = pomodoroType === TIMER_TYPE_POMODORO ? 1500 : shortBreakTimerInSeconds;
@@ -41,20 +41,28 @@ const PomodoroTimer = () => {
 
   const resetTimer = () => {
     clearInterval(intervalId);
-    setTimerValue(pomodoroType === TIMER_TYPE_POMODORO ? 1500 : shortBreakTimerInSeconds);
+    setTimerValue(totalTime);
     setIntervalId(null);
   };
 
   const handlePomodoroTypeChange = (type) => {
     setPomodoroType(type);
-    resetTimer();
   };
 
   useEffect(() => {
-    if (timerValue === 0) return; // Don't update if timer is zero
+    resetTimer(); // Reset timer whenever pomodoroType changes
+  }, [pomodoroType]);
+
+  useEffect(() => {
+    if (timerValue === 0) {
+      audio.play();
+    }
     const progress = (totalTime - timerValue) * multiplierFactor;
-    document.querySelector(`.${styles.progressBar}`).style.background = `conic-gradient(var(--blue) ${progress}deg, var(--purple) ${progress}deg)`;
-  }, [timerValue, pomodoroType]);
+    const progressBar = document.querySelector(`.${styles.progressBar}`);
+    if (progressBar) {
+      progressBar.style.background = `conic-gradient(var(--blue) ${progress}deg, var(--purple) ${progress}deg)`;
+    }
+  }, [timerValue, totalTime, multiplierFactor]);
 
   useEffect(() => {
     return () => clearInterval(intervalId);
@@ -71,7 +79,7 @@ const PomodoroTimer = () => {
                 className={pomodoroType === TIMER_TYPE_POMODORO ? styles.active : ''}
                 onClick={() => handlePomodoroTypeChange(TIMER_TYPE_POMODORO)}
               >
-                Pomodoro
+                Work Time
               </button>
               <button
                 className={pomodoroType === TIMER_TYPE_SHORT_BREAK ? styles.active : ''}
