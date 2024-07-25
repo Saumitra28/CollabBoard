@@ -7,6 +7,9 @@ import Time from "./Components/Time/Time";
 import GoogleSlides from "./Components/GoogleSlides/GoogleSlides";
 import PomodoroTimer from "./Components/Pomodoro/PomodoroTimer";
 import GoogleMeet from "./Components/GoogleMeet/GoogleMeet";
+import Dailygrowth from "./Components/DailyGrowth/Daliygrowth";
+import PollWithResults from "./Components/PollWithResults/PollWithResults";
+import IssueTracker from "./Components/IssueTracker/IssueTracker";
 
 function App() {
   return (
@@ -34,10 +37,20 @@ function App() {
         </div>
         <div className="item6">
           <Weather />
+          <div className="item8">
+          <Dailygrowth />
+        </div>
         </div>
         <div className="item7">
           <GoogleSlides />
         </div>
+        <div className="item8">
+         <PollWithResults/>
+        </div>
+        <div className="item9">
+         <IssueTracker/>
+        </div>
+
       </div>
     </div>
   );
