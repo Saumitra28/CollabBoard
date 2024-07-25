@@ -26,9 +26,9 @@ function App() {
         <div className="item2">
           <Time />
         </div>
-        <div className="item3">
+        {/* <div className="item3">
           <Greeting />
-        </div>
+        </div> */}
         <div className="item4">
           <Weather />
         </div>
