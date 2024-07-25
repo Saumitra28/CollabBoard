@@ -12,6 +12,7 @@ import PollWithResults from "./Components/PollWithResults/PollWithResults";
 import IssueTracker from "./Components/IssueTracker/IssueTracker";
 import GoogleSheetChart from "./Components/GooglesheetsChart/GooglesheetsChart";
 import Chatbot from "./Components/ChatBot/ChatBot";
+import Announcements from './Components/Announcements/Announcements'
 
 function App() {
   return (
@@ -57,6 +58,11 @@ function App() {
         </div>
         <div className="item11">
           <Chatbot />
+
+        </div>
+        <div className="item12 w-full">
+          <Announcements />
+          
         </div>
       </div>
     </div>

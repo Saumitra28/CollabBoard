@@ -1,0 +1,24 @@
+.announcement-banner {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .announcement-text {
+    display: inline-block;
+    color: white;
+    font-size: 120%;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
