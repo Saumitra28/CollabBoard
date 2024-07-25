@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f2f5;
   color: #333;
 }
@@ -19,48 +19,99 @@ body {
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   width: 100%;
-  max-width: 1800px; 
+  max-width: 1800px;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
 }
 
-.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9 {
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9 {
   padding: 4px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover, .item7:hover, .item8:hover, .item9:hover {
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover,
+.item6:hover,
+.item7:hover,
+.item8:hover,
+.item9:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.item1 { min-height: 600px; }
-.item2 { min-height: 150px; }
-.item3 { min-height: 150px; }
-.item4 { min-height: 100px; }
-.item5 { min-height: 150px; }
-.item6 { min-height: 150px; }
-.item7 { min-height: 100px; }
+.item1 {
+  min-height: 600px;
+}
+.item2 {
+  min-height: 150px;
+}
+.item3 {
+  min-height: 150px;
+}
+.item4 {
+  min-height: 100px;
+}
+.item5 {
+  min-height: 150px;
+}
+.item6 {
+  min-height: 150px;
+}
+.item7 {
+  min-height: 100px;
+}
 
-.item1 { grid-column: span 2; }
-.item2 { grid-column: span 1; }
-.item3 { grid-column: span 1; }
-.item4 { grid-column: span 1; }
-.item5 { grid-column: span 1; }
-.item6 { grid-column: span 1; }
-.item7 { grid-column: span 3; }
-
-
+.item1 {
+  grid-column: span 2;
+}
+.item2 {
+  grid-column: span 1;
+}
+.item3 {
+  grid-column: span 1;
+}
+.item4 {
+  grid-column: span 1;
+}
+.item5 {
+  grid-column: span 1;
+}
+.item6 {
+  grid-column: span 1;
+}
+.item7 {
+  grid-column: span 3;
+}
 
 @media (max-width: 768px) {
   .App {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9 {
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9 {
     grid-column: auto;
     grid-row: auto;
   }
