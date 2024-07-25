@@ -19,7 +19,7 @@
   --title-primary-color: rgb(231 226 226);
 }
 /* .pomodoroTimer {
-  height: 100vh;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  height: 650px;
+  height: 620px;
   border-radius: 20px;
   background: var(--dark-blue);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;

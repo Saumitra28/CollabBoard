@@ -1,3 +1,8 @@
+.sheet-wrapper{
+  border-color: black;
+  border-width: 2px;
+  border-radius: 24px;
+}
 .google-sheet-chart-container {
   display: flex;
   justify-content: center;
