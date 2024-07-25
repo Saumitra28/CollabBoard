@@ -44,20 +44,20 @@ export default function IssueTracker() {
   }
 
   return (
-    <div className="App">
-      <h1>Issue Tracker</h1>
+    <div className="bg-gray-500 border rounded-md">
+      <h1 className = "mt-2 font-semibold text-md">Issue Tracker</h1>
 
       <div>
         <form className="form" onSubmit={handleSubmit}>
-          <input placeholder="Your Name" name="Name" type="text" required />
-          <input placeholder="Your Email" name="Email" type="email" required />
-          <input
-            placeholder="Your Message"
+          <input className="w-full" placeholder="Your Issue" name="Name" type="text" required />
+          <input className="w-full" placeholder="Your Email" name="Email" type="email" required />
+          <input className="w-full "
+            placeholder="Issue Description"
             name="Message"
             type="text"
             required
           />
-          <input name="Submit" type="submit" />
+          <input className="w-32 mx-auto text-white hover:cursor-pointer hover:text-slate-200 bg-black" name="Submit" type="submit" />
         </form>
       </div>
       <div>
