@@ -1,7 +1,7 @@
 .todo-card {
   width: 350px;
   height: 270px;
-  background: #222;
+  background: linear-gradient(-45deg, #222, rgb(41, 106, 247));
   border-radius: 10px;
   padding: 7px;
   align-self: center;
@@ -73,7 +73,7 @@
   margin-left: auto;
 }
 
-.todo-controls>* {
+.todo-controls > * {
   cursor: pointer;
   margin-left: 5px;
   font-size: 18px;

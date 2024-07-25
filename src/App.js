@@ -29,8 +29,8 @@ function App() {
             <Todo />
           </div>
           <div className="item4">
-          <GoogleMeet />
-        </div>
+            <GoogleMeet />
+          </div>
         </div>
         <div className="item5">
           <PomodoroTimer />
@@ -38,19 +38,18 @@ function App() {
         <div className="item6">
           <Weather />
           <div className="item8">
-          <Dailygrowth />
-        </div>
+            <Dailygrowth />
+          </div>
         </div>
         <div className="item7">
           <GoogleSlides />
         </div>
         <div className="item8">
-         <PollWithResults/>
+          <PollWithResults />
         </div>
         <div className="item9">
-         <IssueTracker/>
+          <IssueTracker />
         </div>
-
       </div>
     </div>
   );

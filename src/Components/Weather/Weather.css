@@ -124,3 +124,6 @@ button {
   margin-top: -2em;
   transition: 0.2s ease-in-out;
 }
+.btn-search:hover {
+  background: white;
+}
