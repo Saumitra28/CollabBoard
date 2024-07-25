@@ -51,6 +51,9 @@ function App() {
         <div className="item9">
           <IssueTracker />
         </div>
+        <div className="item10">
+          <GoogleSheetChart />
+        </div>
       </div>
     </div>
   );
