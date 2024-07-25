@@ -10,6 +10,7 @@ import GoogleMeet from "./Components/GoogleMeet/GoogleMeet";
 import Dailygrowth from "./Components/DailyGrowth/Daliygrowth";
 import PollWithResults from "./Components/PollWithResults/PollWithResults";
 import IssueTracker from "./Components/IssueTracker/IssueTracker";
+import GoogleSheetChart from "./Components/GooglesheetsChart/GooglesheetsChart";
 
 function App() {
   return (
