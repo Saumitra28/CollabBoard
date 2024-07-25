@@ -11,6 +11,7 @@ import Dailygrowth from "./Components/DailyGrowth/Daliygrowth";
 import PollWithResults from "./Components/PollWithResults/PollWithResults";
 import IssueTracker from "./Components/IssueTracker/IssueTracker";
 import GoogleSheetChart from "./Components/GooglesheetsChart/GooglesheetsChart";
+import Chatbot from "./Components/ChatBot/ChatBot";
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
         </div>
         <div className="item10">
           <GoogleSheetChart />
+        </div>
+        <div className="item11">
+          <Chatbot />
         </div>
       </div>
     </div>
