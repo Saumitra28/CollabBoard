@@ -2,12 +2,12 @@
   width: 25rem;
   /* margin: 2rem auto; */
   padding: 10px;
-  max-width: 50%;
+  max-width: 100%;
   background: #333;
   z-index: 9;
   border-radius: 10px;
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

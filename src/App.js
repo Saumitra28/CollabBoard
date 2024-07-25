@@ -1,13 +1,10 @@
 import "./App.css";
-import React, { useContext } from "react";
+import React from "react";
 import Bookmarks from "./Components/Bookmarks/Bookmarks";
 import Todo from "./Components/Todo/Todo";
-import Crypto from "./Components/Crypto/Crypto";
 import Weather from "./Components/Weather/Weather";
-import Greeting from "./Components/Greeting/Greeting";
 import Time from "./Components/Time/Time";
 import GoogleSlides from "./Components/GoogleSlides/GoogleSlides";
-
 import PomodoroTimer from "./Components/Pomodoro/PomodoroTimer";
 import GoogleMeet from "./Components/GoogleMeet/GoogleMeet";
 
@@ -25,27 +22,21 @@ function App() {
         </div>
         <div className="item2">
           <Time />
+          <div className="item3">
+            <Todo />
+          </div>
+          <div className="item4">
+          <GoogleMeet />
         </div>
-        {/* <div className="item3">
-          <Greeting />
-        </div> */}
-        <div className="item4">
-          <Weather />
         </div>
         <div className="item5">
-          <Todo />
-        </div>
-        {/* <div className="item6">
-          <Crypto />
-        </div> */}
-        <div className="item7">
-          <GoogleSlides />
-        </div>
-        <div className="item8">
           <PomodoroTimer />
         </div>
-        <div className="item9">
-          <GoogleMeet />
+        <div className="item6">
+          <Weather />
+        </div>
+        <div className="item7">
+          <GoogleSlides />
         </div>
       </div>
     </div>
