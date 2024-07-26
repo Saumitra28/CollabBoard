@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Announcements.css";
 
 const announcements = [
-  "30% Summer Discount 💰",
-  "New product launch!",
-  "Maintenance at 2 PM",
-  "Join our webinar this Friday!",
-  "Holiday Sale starts next week!",
-  // Add more announcements as needed
+  "New feature: Google Meet integration 📅",
+  "Update: Enhanced weather widget functionality ⛅",
+  "Reminder: Team meeting at 3 PM today 🕒",
+  "Tip: Use the Pomodoro Timer to boost productivity ⏳",
+  "Feedback: We value your input on the new issue tracker 🛠️",
 ];
 
 export default function Announcements() {
@@ -25,7 +24,6 @@ export default function Announcements() {
       <div className="announcement-banner">
         <p className="announcement-text">{announcements[index]}</p>
       </div>
-      {/* Your other code */}
     </div>
   );
 }

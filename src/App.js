@@ -22,6 +22,9 @@ function App() {
           <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.2)_1px,rgba(0,9,29,1)_1px)] bg-[size:20px_20px]" />
         </div>
       </div>
+      <div className="announcements">
+        <Announcements />
+      </div>
       <div className="App relative z-10">
         <div className="item1">
           <Bookmarks />
@@ -59,10 +62,6 @@ function App() {
         <div className="item11">
           <Chatbot />
 
-        </div>
-        <div className="item12 w-full">
-          <Announcements />
-          
         </div>
       </div>
     </div>
